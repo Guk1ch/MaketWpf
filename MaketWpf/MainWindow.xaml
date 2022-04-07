@@ -12,6 +12,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -23,7 +24,63 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
+        <TextBlock Text="First Name:" Foreground="White" Grid.Column="0" Grid.Row="3" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Last Name:" Foreground="White" Grid.Column="0" Grid.Row="4" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Company Name:" Foreground="White" Grid.Column="0" Grid.Row="5" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Division:" Foreground="White" Grid.Column="0" Grid.Row="6" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+        <TextBlock Text="Phone Numbers" Foreground="Black" Grid.Column="0" Grid.Row="7" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Phone:" Foreground="White" Grid.Column="0" Grid.Row="8" FontSize="20" HorizontalAlignment="Left"  VerticalAlignment="Bottom"/>
+        <TextBlock Text="Fax:" Foreground="White" Grid.Column="0" Grid.Row="9" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+        <TextBlock Text="Birthday:" Foreground="White" Grid.Column="2" Grid.Row="3" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Calendar x:Name="calendar" Grid.Row="3" Grid.Column="3" Grid.RowSpan="5" Grid.ColumnSpan="4" HorizontalAlignment="Stretch" BorderThickness ="0"/>
+
+        <TextBox x:Name="FName" Text="John" FontSize="20" Grid.Row="3" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+        <TextBox x:Name="LName" Text="Smith" FontSize="20" Grid.Row="4" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+        <TextBox x:Name="CName" Text="EPS/CODE" FontSize="20" Grid.Row="5" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+        <TextBox x:Name="DName" Grid.Row="6" FontSize="20" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+
+        <TextBox x:Name="Ph" Text="832-717-4445" FontSize="20" Grid.Row="8" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+        <TextBox x:Name="FX" FontSize="20" Grid.Row="9" Grid.Column="1" BorderBrush="White" Background="#FF292525" Foreground="White"/>
+
+        <Button x:Name="btn_SaveDate" Content="Save Data" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="3" Grid.Row="2" Height="30" Width="90" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3C3939" Offset="0.979"/>
+                    <GradientStop Color="#FF726C6C" Offset="0.271"/>
+                    <GradientStop Color="#FF8B7B7B" Offset="0.099"/>
+                    <GradientStop Color="#FF8C7C7C" Offset="0.194"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_Close" Content="Close" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="4" Grid.Row="2" Height="30" Width="90"  Foreground="White" BorderBrush="White">
+        <Button.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3C3939" Offset="0.979"/>
+                <GradientStop Color="#FF726C6C" Offset="0.271"/>
+                <GradientStop Color="#FF8B7B7B" Offset="0.099"/>
+                <GradientStop Color="#FF8C7C7C" Offset="0.194"/>
+            </LinearGradientBrush>
+        </Button.Background>
+        </Button>
+
+        <TextBlock Text="Customer Search" Grid.Column="0" Grid.Row="1" FontSize="21" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF7E7C7C" />
+        <TextBlock Text="Edit Customer" Grid.Column="1" Grid.Row="1" FontSize="21" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Text="File" Margin="5" Foreground="#FFAAA9A9"/>
+            <TextBlock Text="Notifications" Margin="5" Foreground="#FFAAA9A9"/>
+            <TextBlock Text="Status" Margin="5" Foreground="#FFAAA9A9"/>
+            <TextBlock Text="View" Margin="5" Foreground="#FFAAA9A9"/>
+            <TextBlock Text="Customer" Margin="5" Foreground="#FFAAA9A9"/>
+        </StackPanel>
+        
     </Grid>
 </Window>
